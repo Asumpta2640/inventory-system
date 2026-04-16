@@ -1,9 +1,10 @@
 import requests
 
-BASWE_URL = 'http://localhost:5000'
+BASE_URL = "http://127.0.0.1:5000"
+
 
 def get_inventory():
-    response = requests.get(f'{BASWE_URL}/inventory')
+    response = requests.get(f'{BASE_URL}/products')
     if response.status_code == 200:
         inventory = response.json()
         print("Inventory:")
@@ -14,5 +15,4 @@ def get_inventory():
 
 if __name__ == '__main__':
     get_inventory()
-    
     
