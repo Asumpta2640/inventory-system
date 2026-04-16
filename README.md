@@ -29,12 +29,9 @@ An Inventory Management System for a small retail company
 ```
 inventory-system/
 │
-├── server/
 │   ├── app.py
 │   ├── models.py
-│   ├── config.py
-│   └── seed.py
-│
+│   
 ├── cli.py
 ├── test_app.py
 ├── requirements.txt
